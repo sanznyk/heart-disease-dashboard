@@ -1,0 +1,50 @@
+{
+  "project": "Explainable Heart Disease Classification Demo",
+  "model": "Logistic Regression",
+  "sklearn_version": "1.6.1",
+  "feature_columns": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "numeric_features": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak",
+    "ca"
+  ],
+  "categorical_features": [
+    "sex",
+    "cp",
+    "fbs",
+    "restecg",
+    "exang",
+    "slope",
+    "thal"
+  ],
+  "class_labels": {
+    "0": "Dataset disease label absent",
+    "1": "Dataset disease label present"
+  },
+  "decision_threshold": 0.5,
+  "test_records": 61,
+  "test_metrics": {
+    "accuracy": 0.8688524590163934,
+    "precision": 0.8125,
+    "recall": 0.9285714285714286,
+    "f1": 0.8666666666666667,
+    "roc_auc": 0.9577922077922079
+  }
+}
